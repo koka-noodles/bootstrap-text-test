@@ -1,0 +1,45 @@
+.col-md-1{
+	background: #eff1ea;
+	border-radius: 5px;
+	border: 2px solid;
+	border-color: #ACAD94 #80A4ED;
+}
+
+.col-md-4{
+	background: #595959;
+	border-radius: 5px;
+}
+
+.col-md-8{
+	background: #c1d074;
+	border-radius: 100px;
+	height: 100px;
+	width: 100px;
+}
+
+.col-md-6{
+	background: #80A4ED;
+	border-radius: 5px;
+
+}
+
+body {
+	background-color: #eff1ea !important;
+}
+
+.circle-image{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-image:url("../images/moon.jpg");
+    display:block;
+    background-position-y:25% 
+}
+
+.circle-draw{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-color: #007a4b !important;	
+    display:block;
+}
