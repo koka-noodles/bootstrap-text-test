@@ -1,9 +1,8 @@
-.col-md-1{
-	background: #eff1ea;
-	border-radius: 5px;
-	border: 2px solid;
-	border-color: #ACAD94 #80A4ED;
-}
+
+/*#red{
+	background-color: red;
+	height:20px;
+}*/
 
 .col-md-4{
 	background: #595959;
@@ -11,35 +10,168 @@
 }
 
 .col-md-8{
-	background: #c1d074;
+	background: #4D5969;
 	border-radius: 100px;
 	height: 100px;
-	width: 100px;
+
 }
 
 .col-md-6{
-	background: #80A4ED;
-	border-radius: 5px;
+	background: #7D90A8;
+	border-radius: 15px;
+	height: 10px;
+
+}
+
+
+.jumbotron {
+ /* height: 150px;*/
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  border: 2px solid;
+  border-color: #ACAD94;
+
+}
+
+#fix{    /*keeps the first jumbotron from scrolling*/ 
+  /*background:transparent;*/
+  position: fixed;
+  width: 90%;
+  /*height: 150px; */
+  margin-top: 30px;
+  background-color: yellow;
 
 }
 
 body {
-	background-color: #C1D074 !important;
+	background-color: #3B3F45;
 }
 
-.circle-image{
-    width:300px;
-    height:300px;
-    border-radius:50%;
-    background-image:url("../images/moon.jpg");
-    display:block;
-    background-position-y:25% 
+.tpmargin{
+	margin-bottom: 300px;  /*keeps the contnt below the first jumbotron*/
 }
 
-.circle-draw{
-    width:300px;
-    height:300px;
-    border-radius:50%;
-    background-color: #007a4b !important;	
+.circle-draw{ 
+    width: 150px;
+    height: 150px;
+	border-style: solid;
+	border-color: #869BB5;
+    border-radius: 50%;
+    background-color: #B5D1F5;	
+    border-width: 2px;
     display:block;
+}
+
+h1 { font-family: 'Raleway', sans-serif; font-weight: 400; }
+
+/*h2 { font-family: 'Poiret One', cursive; font-weight: 400; }
+
+h3 { font-family: 'Quicksand', sans-serif; font-weight: 400; }
+
+h4 { font-family: 'Ubuntu', sans-serif; font-weight: 400; }
+
+h5 { font-family: 'Lobster', cursive; font-weight: 400; }
+
+h6 { font-family: 'Lato', sans-serif; font-weight: 400; }*/
+
+.col-md-1{  /*the standerd column*/
+	background: white;
+	border-radius: 5px;
+	border: 2px solid;
+	border-color: #ACAD94;
+	height: 5px;
+	width: 5%;
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+
+
+#red.col-md-1{  /*the first unique column*/
+	background-color: blue;
+	width: 10%;
+	
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+.row-change{  /*gets added to the col-md-1 css on top of the previous*/
+	height: 50px;
+	width: 100%;
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+
+
+.toggler { width: 500px; 
+	height: 200px; 
+	position: relative; 
+}
+
+#button { 
+	padding: .5em 1em; 
+	text-decoration: none; 
+}
+
+#effect { /*the initial state*/
+	position: relative;  
+	padding: 1em; 
+	letter-spacing: 0; 
+	font-size: 1.2em; 
+	border: 1px solid #000; 
+	background: yellow; 
+}
+
+.newClass { /*run effect removes this class */
+	
+	width: 710px; 
+	height: 10px; 
+	color: #fa8072; 
+
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+.newClass2 { /*run effect removes this class */
+	 
+	width: 	10px; 
+	height: 30px;  
+	color: #fa8072; 
+
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+
+
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
 }
