@@ -1,8 +1,5 @@
 
-/*#red{
-	background-color: red;
-	height:20px;
-}*/
+
 
 .col-md-4{
 	background: #595959;
@@ -99,49 +96,19 @@ h6 { font-family: 'Lato', sans-serif; font-weight: 400; }*/
 	transition: width 2s ease, height 2s ease;
 }
 
-.row-change{  /*gets added to the col-md-1 css on top of the previous*/
-	height: 50px;
-	width: 100%;
-	-webkit-transition: width 2s ease, height 2s ease;
-	-moz-transition: width 2s ease, height 2s ease;
-	-o-transition: width 2s ease, height 2s ease;
-	transition: width 2s ease, height 2s ease;
-}
 
 
 
-.toggler { width: 500px; 
-	height: 200px; 
-	position: relative; 
-}
+
 
 #button { 
 	padding: .5em 1em; 
 	text-decoration: none; 
 }
 
-#effect { /*the initial state*/
-	position: relative;  
-	padding: 1em; 
-	letter-spacing: 0; 
-	font-size: 1.2em; 
-	border: 1px solid #000; 
-	background: yellow; 
-}
 
-.newClass { /*run effect removes this class */
-	
-	width: 710px; 
-	height: 10px; 
-	color: #fa8072; 
 
-	-webkit-transition: width 2s ease, height 2s ease;
-	-moz-transition: width 2s ease, height 2s ease;
-	-o-transition: width 2s ease, height 2s ease;
-	transition: width 2s ease, height 2s ease;
-}
-
-.newClass2 { /*run effect removes this class */
+.newClass2 { 
 	 
 	width: 	10px; 
 	height: 30px;  
@@ -155,23 +122,3 @@ h6 { font-family: 'Lato', sans-serif; font-weight: 400; }*/
 
 }
 
-
-.box {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-    animation: myfirst 5s;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myfirst {
-    from {background: red;}
-    to {background: yellow;}
-}
-
-/* Standard syntax */
-@keyframes myfirst {
-    from {background: red;}
-    to {background: yellow;}
-}
