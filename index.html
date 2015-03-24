@@ -119,10 +119,19 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript"> //myscript
+    var switchin = 0;
 
     function box1(){
       var scrolled = $(window).scrollTop();
       console.log("Scroll "+scrolled);  
+      if(scrolled > 0 && scrolled < 500){
+        console.log("below 500 " + switchin);
+        switchin = 1;
+      }
+      else if(scrolled > 500 && scrolled < 1000){
+        console.log("above 500 " + switchin);
+        switchin = 2;
+      }
 
       // $(".col-md-1").toggleClass("row-change");
         
