@@ -54,7 +54,8 @@
      
     <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
    
-
+    <h3 class="blue">TARGET TEXT</h3>
+    <button id="button">Run Effect</button>
     
 
     <div class="container">
@@ -148,6 +149,20 @@
      box1();
 
     });
+
+    $(function() {
+
+      // if($.ui && $.ui.version){
+      //         alert("Jquery UI loaded");
+      //     }
+
+      $( "#button" ).click(function(){
+        $( ".red" ).switchClass( "red", "green", 1000 );
+        $( ".green" ).switchClass( "green", "red", 1000 );
+      });
+
+    });
+
 
    
    

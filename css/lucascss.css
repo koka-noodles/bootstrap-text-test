@@ -136,11 +136,16 @@ h6 { font-family: 'Lato', sans-serif; font-weight: 400; }*/
 
 
 .red { 
-	color:#FF0000; 
+	color: red; 
 	height: 50px;  
 }
 
 .green { 
-	color:#0000FF;
+	color: green;
+	height: 30px;   
+}
+
+.blue { 
+	color: yellow;
 	height: 30px;   
 }
